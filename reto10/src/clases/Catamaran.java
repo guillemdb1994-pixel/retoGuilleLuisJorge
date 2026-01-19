@@ -1,30 +1,31 @@
 package clases;
 
-public class Catamaran extends Barco {
-protected Motor motorSecundario;
+public class Catamaran extends Barco{
 
-public Catamaran(String nombre, Motor motor, double capacidadCombustible, Motor motorSecundario) {
-	super(nombre, motor, capacidadCombustible);
-	this.motorSecundario = motorSecundario;
-}
+	protected Motor motorSecundario;
 
-public Motor getMotorSecundario() {
-	return motorSecundario;
-}
+	public Catamaran(String nombre, Motor motor, double capacidadCombustible, Motor motorSecundario) {
+		super(nombre, motor, capacidadCombustible);
+		this.motorSecundario = motorSecundario;
+	}
 
-public void setMotorSecundario(Motor motorSecundario) {
-	this.motorSecundario = motorSecundario;
-}
+	public Motor getMotorSecundario() {
+		return motorSecundario;
+	}
 
-@Override
-public String toString() {
-	return "Catamaran [motorSecundario=" + motorSecundario + ", toString()=" + super.toString() + "]";
-}
+	public void setMotorSecundario(Motor motorSecundario) {
+		this.motorSecundario = motorSecundario;
+	}
 
-@Override
-public double calcularAutonomia() {
-	// TODO Auto-generated method stub
-	return (super.calcularAutonomia()+(super.capacidadCombustible+motorSecundario.consumo))/2;
-}
-
+	@Override
+	public String toString() {
+		return "Catamaran, motorSecundario: " + motorSecundario + ", " + super.toString();
+	}
+	
+	public double calcularAutonomia() {
+		
+		return (super.calcularAutonomia() + this.capacidadCombustible / this.motorSecundario.getConsumo()) / 2;
+	}
+	
+	
 }

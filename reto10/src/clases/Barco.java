@@ -38,7 +38,7 @@ public class Barco {
 
 	@Override
 	public String toString() {
-		return "Barco [nombre=" + nombre + ", motor=" + motor + ", capacidadCombustible=" + capacidadCombustible + "]";
+		return "Barco: " + nombre + ", Combustible: " +capacidadCombustible + ", datos del motor: " + motor.toString();
 	}
 
 	public double calcularAutonomia() {

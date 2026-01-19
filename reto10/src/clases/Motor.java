@@ -6,6 +6,7 @@ public class Motor {
 	protected double consumo;
 
 	public Motor(String modelo, int potencia, double consumo) {
+		
 		super();
 		this.modelo = modelo;
 		this.potencia = potencia;
@@ -38,7 +39,7 @@ public class Motor {
 
 	@Override
 	public String toString() {
-		return "Motor [modelo=" + modelo + ", potencia=" + potencia + ", consumo=" + consumo + "]";
+		return "  | Motor: " + potencia + "modelo: " + modelo + "consumo: " + consumo;
 	}
 
 }

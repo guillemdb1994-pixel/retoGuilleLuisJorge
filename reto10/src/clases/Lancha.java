@@ -1,6 +1,7 @@
 package clases;
 
-public class Lancha extends Barco {
+public class Lancha extends Barco{
+
 	protected boolean cubierta;
 
 	public Lancha(String nombre, Motor motor, double capacidadCombustible, boolean cubierta) {
@@ -18,13 +19,11 @@ public class Lancha extends Barco {
 
 	@Override
 	public String toString() {
-		return "Lancha [cubierta=" + cubierta + ", toString()=" + super.toString() + "]";
+		return super.toString() + ", tipo Lancha, cubierta: " + cubierta;
 	}
-
-	@Override
-	public double calcularAutonomia() {
-		// TODO Auto-generated method stub
-		return super.calcularAutonomia();
-	}
-
+	
+	
+	
+	
+	
 }

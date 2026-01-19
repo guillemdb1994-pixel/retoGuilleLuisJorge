@@ -25,7 +25,7 @@ public class Puerto {
 	}
 	
 	// ENTRA BARCO
-	public void entrarBarco(Barco barco) {
+	public void entraBarco(Barco barco) {
 		if (lista.size()>=6) {
 			System.out.println("Puerto lleno");
 		} else {

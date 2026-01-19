@@ -18,13 +18,7 @@ public class Yate extends Barco {
 
 	@Override
 	public String toString() {
-		return "Yate [camarotes=" + camarotes + ", toString()=" + super.toString() + "]";
-	}
-
-	@Override
-	public double calcularAutonomia() {
-		// TODO Auto-generated method stub
-		return super.calcularAutonomia();
+		return super.toString() + " tipo Yate, Camarotes: " + camarotes;
 	}
 
 }
