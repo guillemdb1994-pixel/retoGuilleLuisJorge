@@ -4,9 +4,9 @@
 
 ## 📖 Descripción del Proyecto
 
-[cite_start]Este proyecto consiste en una aplicación Java para la gestión de un **Puerto Deportivo** con una capacidad estricta de **6 barcos máximo**[cite: 3, 12]. [cite_start]El sistema permite administrar la entrada y salida de diferentes tipos de embarcaciones, calcular su autonomía basada en motores y simular costes de viajes según el precio del combustible[cite: 4, 16].
+Este proyecto consiste en una aplicación Java para la gestión de un **Puerto Deportivo** con una capacidad estricta de **6 barcos máximo**. El sistema permite administrar la entrada y salida de diferentes tipos de embarcaciones, calcular su autonomía basada en motores y simular costes de viajes según el precio del combustible.
 
-[cite_start]El proyecto implementa conceptos de **Herencia**, **Polimorfismo** y **Encapsulamiento** (Getters/Setters)[cite: 2].
+El proyecto implementa conceptos de **Herencia**, **Polimorfismo** y **Encapsulamiento** (Getters/Setters).
 
 ---
 
@@ -16,11 +16,11 @@ El sistema se basa en la siguiente jerarquía:
 
 ### 1. Clase Motor ⚙️
 Define la propulsión de los barcos.
-* [cite_start]**Atributos:** `modelo` (String), `potencia` (int), `consumo` (double)[cite: 5].
+* **Atributos:** `modelo` (String), `potencia` (int), `consumo` (double).
 
 ### 2. Clase Barco (Padre) 🛥️
 Clase base que contiene los atributos comunes y la lógica general.
-* [cite_start]**Método Principal:** `calcularAutonomia()`[cite: 7].
+* **Método Principal:** `calcularAutonomia()`.
     > **Fórmula:** `Capacidad Combustible / Consumo del Motor` = Horas de autonomía.
 
 ### 3. Tipos de Embarcaciones (Hijas)
@@ -28,9 +28,9 @@ Cada tipo de barco extiende la clase base y añade características únicas:
 
 | Tipo | Atributos Específicos | Lógica de Autonomía |
 | :--- | :--- | :--- |
-| **🚤 Lancha** | [cite_start]`cubierta` (boolean) [cite: 8] | Cálculo Normal |
-| **🛳️ Yate** | [cite_start]`camarotes` (int) [cite: 9] | Cálculo Normal |
-| **⛵ Catamarán** | [cite_start]`motorSecundario` (Motor) [cite: 10] | **Sobrescrito** (Media de 2 motores) |
+| **🚤 Lancha** | `cubierta` (boolean)  | Cálculo Normal |
+| **🛳️ Yate** | `camarotes` (int)  | Cálculo Normal |
+| **⛵ Catamarán** | `motorSecundario` (Motor)  | **Sobrescrito** (Media de 2 motores) |
 
 ---
 
