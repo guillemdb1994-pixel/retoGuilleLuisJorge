@@ -4,11 +4,12 @@ import java.util.ArrayList;
 
 public class Puerto {
 	protected ArrayList<Barco> lista;
-
-	public Puerto(ArrayList<Barco> lista) {
+	
+	public Puerto() {
 		super();
-		this.lista = new ArrayList<>() ;
+		this.lista = new ArrayList<>();
 	}
+	
 
 	public ArrayList<Barco> getLista() {
 		return lista;
